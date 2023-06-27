@@ -8,6 +8,10 @@
   analytics.load("KvBj0Q5KHD9ZH6R65qwiIifT3P7OKuDR");
   analytics.page();
   }}();
+
+  analytics.ready(function() {
+      console.log(window.analytics.user())
+  });
 </script>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
