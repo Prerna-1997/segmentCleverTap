@@ -168,6 +168,11 @@ a {
           Notification.requestPermission().then(function(permission) { console.log('permiss', permission)});
 
         }
+
+          window.onload= function(){
+              console.log("Page loaded");
+              analytics.track("page_loaded");
+          }
     </script>
 
     <script>
@@ -180,7 +185,7 @@ a {
       };
     </script>
 
-<script src="/myctwebsite/clevertap_sw.js"></script>
+<!--<script src="/myctwebsite/clevertap_sw.js"></script>-->
 
 </form>
 </div>
