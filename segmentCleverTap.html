@@ -13,6 +13,11 @@
       console.log(window.analytics.user())
       console.log("In Ready function")
   });
+
+  window.onload= function(){
+          console.log("Page loaded");
+              analytics.track("page_loaded");
+  }
 </script>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -169,10 +174,7 @@ a {
 
         }
 
-          window.onload= function(){
-              console.log("Page loaded");
-              analytics.track("page_loaded");
-          }
+          
     </script>
 
     <script>
